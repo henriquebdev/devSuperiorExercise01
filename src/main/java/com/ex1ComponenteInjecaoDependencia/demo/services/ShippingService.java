@@ -14,7 +14,7 @@ public class ShippingService {
         double basicValueWithDiscount = order.getBasic() - percentageDiscount;
         if(basicValueWithDiscount < 100.0){
             basicValueWithDiscount+= 20.0;
-        }else if(basicValueWithDiscount >= 100.0 && basicValueWithDiscount <= 200.0){
+        }else if(basicValueWithDiscount >= 100.0 && basicValueWithDiscount < 200.0){
             basicValueWithDiscount+= 12.0;
         }else{
             basicValueWithDiscount+= 0.0;
